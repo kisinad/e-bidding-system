@@ -1,3 +1,6 @@
+body {
+  background-image: url("../images/backgrounds-blank-blue-953214.jpg");
+}
 html{
 	color:#000000;
     margin-left:0;
@@ -6,6 +9,111 @@ html{
     margin-bottom:0;
     margin-width:0;
     margin-height:0;
-    background-color:#A3A6BA; 
+    /*background-image: url("images/bg_img.jpg");*/
+    /*background-color:grey; */
 }
+@import url(http://fonts.googleapis.com/css?family=Droid+Serif);
+#header{
+	width: 100%;
+    height: 67px;
+}
+h2{
+text-align: center;
+font-size: 24px;
+color: white;
+font-weight: bold;
+}
+hr{
+margin-bottom: 30px;
+}
+div.container{
+width: 500px;
+height: 371px;
+margin: 50px auto;
+font-family: 'Droid Serif', serif;
+position: relative;
+background-color: rgba(0, 0, 0, 0.5);
+}
+div.main{
+	width: 508px;
+    min-height: 309px;
+    margin: 0 auto;
+    background-image: url("../images/rectangle.png") no-repeat;
+    padding-top: 35px;
+    text-align: center;
+/*width: 320px;
+margin-top: 80px;
+float:left;
+padding: 10px 55px 40px;
+background-color: rgba(187, 255, 184, 0.65);
+border: 15px solid white;
+box-shadow: 0 0 10px;
+border-radius: 2px;
+font-size: 13px;*/
+}
+input[type=text],[type=password] {
+width: 65.7%;
+height: 34px;
+padding-left: 5px;
+margin-bottom: 20px;
+margin-top: 8px;
+box-shadow: 0 0 5px #6e7575;
+border: 2px solid #a1a9a9;
+color: #4f4f4f;
+font-size: 16px;
+text-align: center;
+}
+label{
+color: #464646;
+text-shadow: 0 1px 0 #fff;
+font-size: 14px;
+font-weight: bold;
+}
+#login {
+width: 40%;
+background: #6699CC;
+border: 1px solid #0F799E;
+font-size: 20px;
+margin-top: 15px;
+padding: 8px;
+font-weight: bold;
+cursor: pointer;
+color: white;
+text-shadow: 0px 1px 0px #13506D;
+}
+#login:hover{
+background: linear-gradient(#36caf0 5%, #22abe9 100%);
+color: black;
+}
+a:first-child {
+    background-image: url("../images/arrow_right.png") no-repeat;
+    background-repeat: no-repeat;
+    padding-left: 15px;
+    /* display: block; */
+}
+.form{
+	margin: 0px;
+    padding: 0px;
+    display: inline;
+}
+
+
+a:link {
+    color: #FFFFFF;
+    font-weight: bold;
+    text-decoration: none;
+}
+a:link:hover {
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+}
+footer{
+	    color: #FFFFFF;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center
+}
+::placeholder {
+  color: black;
 }

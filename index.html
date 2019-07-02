@@ -5,16 +5,37 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
+	
 	<header>
-		<h1>e-Bidding System</h1>
+		<div id="header">
+			<h1 style="text-align: center;">e-Bidding System</h1>
+		</div>
+		
 	</header>
 	<nav></nav>
-	<section></section>
-	<aside></aside>
-	<article></article>
+	<div class="container">
+		<div class="main">
+		<form class="form" method="post" action="#">
+		<h2 >LOGIN</h2>
+		<div class='wrapper'>
+			<!-- <label>Email :</label> -->
+			<input type="text" name="demail" id="email" placeholder="Email Address">
+		</div>
+		<div class='wrapper'>
+			<!-- <label>Password :</label> -->
+			<input type="password" name="password" id="password"  autocomplete="off" placeholder="password" value="" >
+		</div>
+		
+		<input type="button" name="login" id="login" value="Login">
+		<div id="forgot_pwd" class="links"><a href="#" onclick="load_dialog_pwd();">Forgot my password</a></div>
+		<div id="supp_reg" class="links"><a href="/fw/homepages/registration/">New Supplier Registration</a></div>
+		</form>
+		</div>
+	</div>
+
 	<footer>
-		<p>By: Denis Ahimbisibwe, Denis Kisina, Melissa Kaitesi & David Mayanja</p>
-		e-Bidding System &copy; 2019
+		
+		<p>e-Bidding System &copy; 2019 | By: Denis Ahimbisibwe, Denis Kisina, Melissa Kaitesi & David Mayanja</p>
 	</footer>
 
 </body>
