@@ -3,40 +3,71 @@
 <head>
 	<title>e-Bidding System</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script type="text/javascript" src="js/jquery-3.4.1.js"></script>
+	<script type="text/javascript" src="js/login.js"></script>
+	
+	
 </head>
 <body>
 	
 	<header>
 		<div id="header">
-			<h1 style="text-align: center;">e-Bidding System</h1>
+			<h1 style="text-align: center; color:white;">e-Bidding System</h1>
 		</div>
 		
 	</header>
-	<nav></nav>
-	<div class="container">
-		<div class="main">
-		<form class="form" method="post" action="#">
-		<h2 >LOGIN</h2>
-		<div class='wrapper'>
-			<!-- <label>Email :</label> -->
-			<input type="text" name="demail" id="email" placeholder="Email Address">
+	<!-- <nav></nav> -->
+	<div class="login-page">
+		<div class="form">
+			<form class="register-form">
+				<h2 >Register</h2>
+				<!-- <div class='wrapper'> -->
+					<input type="text" placeholder="Company name" id="companyname" />
+				<!-- </div> -->
+				
+				<!-- <div class="wrapper"> -->
+				<input type="text" placeholder="Email" id="companyemail" />
+				<!-- </div>
+				<div class="wrapper"> -->
+					<input type="text" placeholder="password" id="companypassword" />
+				<!-- </div> -->
+				<input type="button" name="login" id="create" value="Register">
+				<!-- <button>Create</button> -->
+				<p class="message" style="color: white">Already Registered?<a href="#">Login</a></p>
+			</form>
+
+
+			<form class="login-form" method="post" action="#">
+			<h2 >Login</h2>
+			<!-- <div class="wrapper"> -->
+				<!-- <label>Email :</label> -->
+				<input type="text" name="demail" id="email" placeholder="Email Address">
+			<!-- </div>
+			<div class="wrapper"> -->
+				<!-- <label>Password :</label> -->
+				<input type="password" name="password" id="password"  autocomplete="off" placeholder="password" value="" >
+			<!-- </div>
+			<div class="wrapper"> -->
+				<input type="button" name="login" id="login" value="Login">
+			<!-- </div> -->
+			<!-- <button>Login</button> -->
+			<p class="message" style="color: white;">Not Registered?<a href="#">Register</a></p>
+
+			<!-- <div id="forgot_pwd" class="links"><a href="#" onclick="load_dialog_pwd();">Forgot my password</a></div>
+			<div id="supp_reg" class="links"><a href="/fw/homepages/registration/">New Supplier Registration</a></div> -->
+			</form>
+			</div>
 		</div>
-		<div class='wrapper'>
-			<!-- <label>Password :</label> -->
-			<input type="password" name="password" id="password"  autocomplete="off" placeholder="password" value="" >
-		</div>
-		
-		<input type="button" name="login" id="login" value="Login">
-		<div id="forgot_pwd" class="links"><a href="#" onclick="load_dialog_pwd();">Forgot my password</a></div>
-		<div id="supp_reg" class="links"><a href="/fw/homepages/registration/">New Supplier Registration</a></div>
-		</form>
-		</div>
-	</div>
 
 	<footer>
 		
 		<p>e-Bidding System &copy; 2019 | By: Denis Ahimbisibwe, Denis Kisina, Melissa Kaitesi & David Mayanja</p>
 	</footer>
-
+<!-- <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+ --><!-- <script type="text/javascript">
+	$('.message a').click(function(){
+		$('form').animate({height:"toggle", opacity:"toggle"}, "slow");
+	});
+</script> -->
 </body>
 </html>
