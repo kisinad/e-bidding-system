@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>User Account</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="status_user.css">
+	<script type="text/javascript" src="jquery-3.4.1.js"></script>
+	<script type="text/javascript" src="status_user.js"></script>
+</head>
+<body>
+	<div id="User" class="container">
+		<h1 id="Account_Names">[User Name]</h1>
+		<div id="Tenders">
+			<p>Listed below are the tenders available for bidding. Please review and place a suitable entry in the subsequntly linked form:</p>
+			<table id="Opportunities" class="table table-hover table-sm table-bordered">
+				<thead id="titles" class="bg-secondary">
+					<th>#</th>
+					<th>Reference No.</th>
+					<th>Company</th>
+					<th>Description</th>					
+				</thead>
+				<tbody id="details">
+					<tr>
+						<td><input type="text" name="entry_no"> </td>
+						<td><input type="text" name="ref"></td>
+						<td><input type="text" name="c_name"></td>
+						<td><input type="text" name="desc"></td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div id="bid_form">
+			<p>
+				Follow the the link below to create and submit your bid:<br>
+				<a href="">Bidding form</a>
+			</p>
+		</div>
+		<div id="Tacker">
+			<table id="bid_status" class="table table-hover table-sm table-bordered">
+				<thead class="bg-secondary">
+					<th>#</th>
+					<th>Ref.No.</th>
+					<th>Name of Receipient</th>
+					<th>Bid Value</th>
+					<th>Status</th>
+					<th>Reason</th>
+				</thead>
+				<tbody>
+					<tr>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+</body>
+</html>
