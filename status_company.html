@@ -3,13 +3,19 @@
 <head>
 	<title>Company Account</title>
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
-	<link rel="stylesheet" type="text/css" href="status_company.css">
-	<script type="text/javascript" src="jquery-3.4.1.js"></script>
-	<script type="text/javascript" src="status_company.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/status.css">
+	<script type="text/javascript" src="js/jquery-3.4.1.js"></script>
+	<script type="text/javascript" src="js/status_company.js"></script>
+	<script type="text/javascript" src="js/login.js"></script>
 </head>
 <body>
 	<div id="Company" class="container">
 		<h1 id="Account_name">[Company Name]</h1>
+		<div class="navigation">
+			<a class="button" href="index.html">
+				<div class="logout">LOGOUT</div>
+			</a>
+		</div>
 		<div id="tenders">
 			<p>Use the form below to input details for tenders that you would like to make available for bidding:</p>
 			<form>
@@ -55,12 +61,12 @@
 		<div id="bidders">
 			<p>The table below displays the bids that have been submitted for the tenders you put up. Please reply accordingly by selecting '<span style="color: green">Accept</span>' or '<span style="color: red">Decline</span>' </p>
 			<table id="bids" class="table table-hover table-sm table-bordered">
-				<thead id="bid_properties" class="bg-secondary">
+				<thead id="bid_properties" class="bg-information">
 					<th>#</th>
 					<th>Name of Receipient</th>
 					<th>Address</th>
 					<th>Purpose/Reason</th>
-					<th>Amount &currency</th>
+					<th>Amount & Currency</th>
 					<th>Response</th>
 					<th>Feedback</th>
 				</thead>
@@ -71,7 +77,7 @@
 						<td></td>
 						<td></td>
 						<td></td>
-						<td><input type="button" name="Accept" class="btn btn-primary"><input type="button" name="Decline" class="btn btn-danger"></td>
+						<td><input type="button" name="Accept" class="btn btn-success" value="Accept"><input type="button" name="Decline" class="btn btn-danger" value="Decline"></td>
 						<td><input type="text" name="feedback"></td>
 					</tr>
 				</tbody>
