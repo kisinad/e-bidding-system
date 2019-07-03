@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html>
+<meta charset="utf-8">
 <head>
+<script type="text/javascript" src="jquery-3.4.1.js"></script>
+<script type="text/javascript" src="bids.js"></script>
 	<title></title>
 	<style>
 table {
@@ -23,17 +26,17 @@ tr:nth-child(even) {
             <h3> ANNEX A: 	FORM A1: APPLICATION SUBMISSION SHEET</h3>
  <div id = form action="">
   Date:<br>
-  <input name="textarea" value="[insert day, month, year]"required>
+  <input type="textarea" id="date" date=""required>
 </form>
 </div><br>
 
-To:<br><textarea rows="4" cols="50" name="comment" form="usrform"required>
-[insert full name of Procuring and Disposing Entity]...</textarea>
+To:<br><input type="textarea" id="to" to =""> </textarea>
 </address>
 <br> We, the undersigned declare that: 
 <p><ol type="a">
-	<li>We have examined and have no reservations to the short listing document including Addenda No:<form action="">
-  <textarea rows="4" cols="50"name="text" value="">[insert the number and issuing date of each Addenda]</textarea>
+	<li>We have examined and have no reservations to the short listing document including Addenda No:
+		<form action="">
+  <textarea rows="4" cols="50"name="text" id="Addenda">[insert the number and issuing date of each Addenda]</textarea>
 </form>
 		</ol></p>
 <p> We hereby apply to be short listed for the following works, services or supplies:</p>           
@@ -49,9 +52,9 @@ table, th, td {
         <th>Description of Works, Services or Supplies</th>
       </tr>
       <tr>
-      <td height="10"><input type="" name=""></td>
-    <td height="50"><input type="" name=""></td>
-    <td height="50"><input type="" name=""></td>
+      <td height="10"><input type="text" id="bid_no"></td>
+    <td height="50"><input type="text" id="referencenumber"></td>
+    <td height="50"><input type="text"id="descriptionOfWorks"></td>
   </tr>
   <tr>
       <td height="10"><input type="" name=""></td>
@@ -79,14 +82,14 @@ table, th, td {
         <th>Purpose/Reason</th>
         <th>Amount & currency</th>
       </tr>
-      <tr>
-      <td height="50"><input type="" name=""></td>
-    <td height="50"><input type="" name=""></td>
-    <td height="50"><input type="" name=""></td>
-    <td height="50"><input type="" name=""></td>
+  <tr>
+      <td height="10"><input type="Name of Recipient" name=""></td>
+    <td height="50"><input type="Address" name=""></td>
+    <td height="50"><input type="Purpose" name=""></td>
+    <td height="50"><input type="cost" name=""></td>
   </tr>
   <tr>
-      <td height="10"><input type="" name=""></td>
+      <td height="50"><input type="" name=""></td>
     <td height="50"><input type="" name=""></td>
     <td height="50"><input type="" name=""></td>
     <td height="50"><input type="" name=""></td>
@@ -102,27 +105,27 @@ table, th, td {
   <br>
   <div class="form-group row"> 
   	 <form>  
-        PhoneNumber: <input type="text" name=""required> </p>  
+        PhoneNumber: <input type="text" id="phoneNumber"required> </p>  
     </form> 
   </div>
   <div class="form-group row"> 
   	 <form>  
-        Email: <input type="text" name=""required> </p>  
+        Email: <input type="text" id="email"required> </p>  
   
 </form>
 Signed:<br><textarea rows="4" cols="50" name="comment" form="usrform">
 [signature of person whose name and capacity are shown below]...</textarea><br>
 Name:<br><textarea rows="4" cols="50" name="comment" form="usrform">
 [insert complete name of person signing the application]	...</textarea><br>
-In the capacity of <br><textarea rows="2" cols="50" name="comment" form="usrform">[insert legal capacity of person signing the application]</textarea><br>Duly authorised to sign the application for and on behalf of: <br><textarea rows="2" cols="50" name="comment" form="usrform">[insert complete name of Applicant/Joint Venture]...</textarea>
+In the capacity of <br><textarea rows="2" cols="50" name="comment" form="usrform">...</textarea><br>Duly authorised to sign the application for and on behalf of: <br><textarea rows="2" cols="50" name="comment" form="usrform">...</textarea>
  
   <p>
     <form>  
-        Submission Date: <input type="date" name="Startdate"> </p>  
+        Submission Date: <input type="date" name="Startdate"></p>  
     </form> 
     <div class="form-group row">
     <div class="offset-4 col-8">
-      <button name="submit" type="submit" class="btn btn-primary">Submit</button>
+      <button name="submit" id="submit" class="btn btn-primary">Submit</button>
     </div>
   </div> 
 </div>
