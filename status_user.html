@@ -3,17 +3,23 @@
 <head>
 	<title>User Account</title>
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
-	<link rel="stylesheet" type="text/css" href="status_user.css">
-	<script type="text/javascript" src="jquery-3.4.1.js"></script>
-	<script type="text/javascript" src="status_user.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/status.css">
+	<script type="text/javascript" src="js/jquery-3.4.1.js"></script>
+	<script type="text/javascript" src="js/status_user.js"></script>
+	<script type="text/javascript" src="js/login.js"></script>
 </head>
 <body>
 	<div id="User" class="container">
 		<h1 id="Account_Names">[User Name]</h1>
+		<div class="navigation">
+			<a class="button" href="index.html">
+				<div class="logout">LOGOUT</div>
+			</a>
+		</div>
 		<div id="Tenders">
 			<p>Listed below are the tenders available for bidding. Please review and place a suitable entry in the subsequntly linked form:</p>
 			<table id="Opportunities" class="table table-hover table-sm table-bordered">
-				<thead id="titles" class="bg-secondary">
+				<thead id="titles" class="bg-information">
 					<th>#</th>
 					<th>Reference No.</th>
 					<th>Company</th>
@@ -21,10 +27,10 @@
 				</thead>
 				<tbody id="details">
 					<tr>
-						<td><input type="text" name="entry_no"> </td>
-						<td><input type="text" name="ref"></td>
-						<td><input type="text" name="c_name"></td>
-						<td><input type="text" name="desc"></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
 					</tr>
 				</tbody>
 			</table>
@@ -37,7 +43,7 @@
 		</div>
 		<div id="Tacker">
 			<table id="bid_status" class="table table-hover table-sm table-bordered">
-				<thead class="bg-secondary">
+				<thead class="bg-information">
 					<th>#</th>
 					<th>Ref.No.</th>
 					<th>Name of Receipient</th>
