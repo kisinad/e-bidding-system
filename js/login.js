@@ -28,7 +28,7 @@ $('#login').click(function(){
 	var inputPassword = $('#password').val();
 	if((inputEmail == localStorage.getItem('companyemail')) && (inputPassword ==localStorage.getItem('companypassword'))){
 		// console.log("login sucessful!");
-		window.location.href="https://www.w3schools.com";
+		window.location.href="index-login.html";
 	}
 	// const keys = Object.keys(localStorage)
 	// for (i=0; i<localStorage.length; i++){
