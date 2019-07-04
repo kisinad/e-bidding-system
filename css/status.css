@@ -12,6 +12,14 @@ thead {
 	text-align: right;
 }
 footer{
+<<<<<<< HEAD
+	color: white;
+	text-align: center;
+	position: fixed;
+  	left: 0;
+  	bottom: 0;
+  	width: 100%;
+=======
 	    color: #FFFFFF;
     font-weight: bold;
     text-decoration: none;
@@ -24,4 +32,5 @@ footer{
   left: 0;
   bottom: 0;
   width: 100%;
+>>>>>>> 8e0b5e2870b5566675b8934eaa97c281f7c57220
 }
