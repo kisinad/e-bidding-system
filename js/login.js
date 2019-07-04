@@ -23,16 +23,32 @@ $('#create').click(function(){
 		location.reload();
 	}
 });
+
 $('#login').click(function(){
 	var inputEmail = $('#email').val();
 	var inputPassword = $('#password').val();
 	if((inputEmail == localStorage.getItem('companyemail')) && (inputPassword ==localStorage.getItem('companypassword'))){
 		// console.log("login sucessful!");
-		window.location.href="index-login.html";
-	}
+
+		
+
+		window.location.href="status_user.html";
+		// var currentUser = localStorage.getItem('companyemail');
+		// if (companyname == )
+		// var companyNameDis = $('#email').val();
+		// $('#Account_Names').empty().append(currentUser);
+		// $('#Account_Names').html( "<b>" + inputEmail + "</b>");
+		// $("#Account_Names").text( "test");
+		// $('#Account_Names').empty().append('inputEmail');
+		// $('#Account_Names').html('Hello World');
+	};
 	// const keys = Object.keys(localStorage)
 	// for (i=0; i<localStorage.length; i++){
 	// 	if()
 	// }
 });
+var currentUser = localStorage.getItem('companyemail');
+// // var companyNameDis = $('#email').val();
+$('#Account_Names').empty().append(currentUser);
+
 });

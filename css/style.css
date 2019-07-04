@@ -192,3 +192,12 @@ a:link:hover {
     color: grey;
     font-weight: bold;
     text-decoration: none;
+}
+.page-footer{
+	color: white;
+	text-align: center;
+	 position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
