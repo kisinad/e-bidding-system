@@ -1,6 +1,14 @@
 $(document).ready(function()
 {
-	
+
+//$('#newTender').evt.preventDefault();
+
+$('#reset').click(function clear(){
+    $('#referencenumber').val()='';
+    $('#companyName').val()='';
+    $('#description').val()='';
+});
+
 $('#submit').click(function()
 {
     const referenceNumber = $('#referenceNumber').val();
@@ -24,13 +32,9 @@ $('#submit').click(function()
 });
 // =======
 // $(document).ready(function(){
-// 	$('#newTender').evt.preventDefault();
+// 	
 
-// 	$('#reset').click(function clear(){
-// 		$('#ref').val()='';
-// 		$('#c_name').val()='';
-// 		$('#desc').val()='';
-// 	});
+// 	
 
 // 	$('#save').click(function(){
 // 	const referenceNumber = $('#ref').val();
