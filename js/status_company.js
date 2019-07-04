@@ -9,13 +9,13 @@ $('#reset').click(function clear(){
     $('#description').val()='';
 });
 
-$('#submit').click(function()
+$('#save').click(function()
 {
-    const referenceNumber = $('#referenceNumber').val();
+    var referenceNumber = $('#referenceNumber').val();
     localStorage.setItem("ReferenceNumber", referenceNumber);
-    const companyName = $('#companyName').val();
+    var companyName = $('#companyName').val();
     localStorage.setItem("CompanyName",companyName);
-    const description = $('#description').val();
+    var description = $('#description').val();
     localStorage.setItem("Description", description);
     
     // {
