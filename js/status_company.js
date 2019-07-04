@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 $(document).ready(function()
 {
 	
@@ -22,28 +21,28 @@ $('#submit').click(function()
     // localStorage.setItem("address", address);
     // const addenda = $('#Addenda').val();
     // localStorage.setItem("addenda", addenda);
+});
 
 });
-=======
-$(document).ready(function(){
-	$('#newTender').evt.preventDefault();
+// =======
+// $(document).ready(function(){
+// 	$('#newTender').evt.preventDefault();
 
-	$('#reset').click(function clear(){
-		$('#ref').val()='';
-		$('#c_name').val()='';
-		$('#desc').val()='';
-	});
+// 	$('#reset').click(function clear(){
+// 		$('#ref').val()='';
+// 		$('#c_name').val()='';
+// 		$('#desc').val()='';
+// 	});
 
-	$('#save').click(function(){
-	const referenceNumber = $('#ref').val();
-	const companyName = $('#c_name').val();
-	const description = $('#desc').val();
+// 	$('#save').click(function(){
+// 	const referenceNumber = $('#ref').val();
+// 	const companyName = $('#c_name').val();
+// 	const description = $('#desc').val();
 
-	if (referenceNumber && companyName && description){
-		localStorage.setItem("referenceNumber", referenceNumber);
-		localStorage.setItem("companyName", companyName);
-		localStorage.setItem("description",description);
-		location.reload();
-	};
-})	
->>>>>>> 971797a5a0132709a9b6a3ea8360d4b14685cabb
+// 	if (referenceNumber && companyName && description){
+// 		localStorage.setItem("referenceNumber", referenceNumber);
+// 		localStorage.setItem("companyName", companyName);
+// 		localStorage.setItem("description",description);
+// 		location.reload();
+// 	};
+// });
