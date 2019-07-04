@@ -13,7 +13,7 @@ localStorage.setItem("To", to);
 
 {
     const bid_no = $('#bid_no').val();
-    localStorage.setItem("bid_no", no);
+    localStorage.setItem("bid_no", bid_no);
     const referencenumber = $('#referencenumber').val();
     localStorage.setItem("referencenumber",referencenumber);
     const descriptionOfWorks = $('#descriptionOfWorks').val();
@@ -22,8 +22,8 @@ localStorage.setItem("To", to);
     localStorage.setItem("addenda", addenda);
 
 {
-    const nameofRecipient = $('#nameofRecipient').val();
-    localStorage.setItem("nameofRecipient", nameofRecipient);
+    const recipient = $('#recipient').val();
+    localStorage.setItem("recipient", recipient);
     const address = $('#address').val();
     localStorage.setItem("address",address);
     const purpose = $('#purpose').val();
@@ -52,11 +52,11 @@ localStorage.setItem("Capacity", capacity);
 
 {
 const authority = $('#authority').val();
-localStorage.setItem("Authority", Authority);
+localStorage.setItem("Authority", authority);
 
 {
-const time = $('#time').val();
-localStorage.setItem("Time", Authority);
+const date = $('#date').val();
+localStorage.setItem("Date", date);
 
 {
 const submit = $('#submit').val();
@@ -64,6 +64,7 @@ localStorage.setItem("Submit", submit);
 {
 const cancel = $('#cancel').val();
 localStorage.setItem("Cancel", cancel);
+location.reload();
                };
                 };
             };
