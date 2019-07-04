@@ -1,20 +1,12 @@
 $(document).ready(function()
 {
-
-//$('#newTender').evt.preventDefault();
-
-$('#reset').click(function clear(){
-    $('#referencenumber').val()='';
-    $('#companyName').val()='';
-    $('#description').val()='';
-});
-
+	
 $('#submit').click(function()
 {
     const referenceNumber = $('#referenceNumber').val();
     localStorage.setItem("ReferenceNumber", referenceNumber);
     const companyName = $('#companyName').val();
-    localStorage.setItem("CompanyName",companyName);
+    localStorage.setItem("CompanyName",companyName);s
     const description = $('#description').val();
     localStorage.setItem("Description", description);
     
@@ -32,9 +24,13 @@ $('#submit').click(function()
 });
 // =======
 // $(document).ready(function(){
-// 	
+// 	$('#newTender').evt.preventDefault();
 
-// 	
+// 	$('#reset').click(function clear(){
+// 		$('#ref').val()='';
+// 		$('#c_name').val()='';
+// 		$('#desc').val()='';
+// 	});
 
 // 	$('#save').click(function(){
 // 	const referenceNumber = $('#ref').val();
