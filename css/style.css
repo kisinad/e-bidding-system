@@ -129,18 +129,9 @@ a:first-child {
     display: inline;
 }
 
-a:link {
-    color: #FFFFFF;
-    font-weight: bold;
-    text-decoration: none;
-}
-a:link:hover {
-    color: black;
-    font-weight: bold;
-    text-decoration: none;
 }
 footer{
-	    color: #FFFFFF;
+	color: #FFFFFF;
     font-weight: bold;
     text-decoration: none;
     text-align: center
@@ -149,7 +140,7 @@ footer{
   color: black;
 }
 #create{
-width: 40%;
+width: 50%;
 background: #6699CC;
 border: 1px solid #0F799E;
 font-size: 20px;
@@ -163,17 +154,50 @@ text-shadow: 0px 1px 0px #13506D;
 .form .register-form{
 	display: none;
 }
-/*ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  width: 160px;
-  overflow: hidden;
-} 
-
-li a {
-  display: block;
+.navigation {
+  width: 100%;
+  background-color: black;
 }
-li {
-  display: inline;
-}*/
+.logout {
+  font-size: .8em;
+  font-family: 'Oswald', sans-serif;
+	position: relative;
+  right: -18px;
+  bottom: -4px;
+  overflow: hidden;
+  letter-spacing: 3px;
+  opacity: 1;
+  transition: opacity .45s;
+  -webkit-transition: opacity .35s;
+  
+}
+a:hover {
+  width: 100px;
+}
+
+a:hover .logout{
+  opacity: 1;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:link {
+    color: #FFFFFF;
+    font-weight: bold;
+    text-decoration: none;
+}
+a:link:hover {
+    color: grey;
+    font-weight: bold;
+    text-decoration: none;
+}
+.page-footer{
+	color: white;
+	text-align: center;
+	 position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
