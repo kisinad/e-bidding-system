@@ -5,10 +5,8 @@ $('#submit').click(function()
 {
     const referenceNumber = $('#referenceNumber').val();
     localStorage.setItem("ReferenceNumber", referenceNumber);
-
     const companyName = $('#companyName').val();
     localStorage.setItem("CompanyName",companyName);
-
     const description = $('#description').val();
     localStorage.setItem("Description", description);
     
