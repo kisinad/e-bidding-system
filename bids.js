@@ -61,7 +61,11 @@ localStorage.setItem("Time", Authority);
 {
 const submit = $('#submit').val();
 localStorage.setItem("Submit", submit);
+{
+const cancel = $('#cancel').val();
+localStorage.setItem("Cancel", cancel);
                };
+                };
             };
          };
       };

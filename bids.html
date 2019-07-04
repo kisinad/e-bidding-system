@@ -20,17 +20,18 @@ td, th {
 tr:nth-child(even) {
   background-color: #dddddd;
 }
+body {
+  text-align: center;
+}
 </style>
 </head>
 <body>
             <h3> ANNEX A: 	FORM A1: APPLICATION SUBMISSION SHEET</h3>
  <div id = form action="">
-  Date:<br>
-  <input type="textarea" id="date" date=""required>
+  Date: <input type="textarea" id="date" date=""required>
 </form>
 </div><br>
-
-To:<br><input type="textarea" id="to" to =""> </textarea>
+To:<input type="textarea" id="to" to =""> </textarea><br>
 </address>
 <br> We, the undersigned declare that: 
 <p><ol type="a">
@@ -45,7 +46,7 @@ table, th, td {
   border: 1px solid black;
 }
 </style>
-<table>
+<table align="center">
   <tr>
    <th>No</th>
         <th>Reference Number</th>
@@ -75,7 +76,7 @@ table, th, td {
   <li>We declare that the following commissions, gratuities, or fees have been paid or are to be paid with respect to the short listing process, the corresponding bidding process or execution of the Contract: <p><b>[Insert complete name of each Recipient, their full address, the reason for which each commission or gratuity was paid and the amount and currency of each such commission or gratuity. <b>If none has been paid or is to be paid, indicate “none”.]</b></p></li>
 </ol>
 </p> 
-  <table>
+  <table align="center">
   <tr>
         <th>Name of Recipient</th>
         <th>Address</th>
@@ -105,18 +106,18 @@ table, th, td {
   <br>
   <div class="form-group row"> 
   	 <form>  
-        PhoneNumber: <input type="text" id="phoneNumber"required> </p>  
+        PhoneNumber: <input type="text" id="phoneNumber"required> </p><br>  
     </form> 
   </div>
   <div class="form-group row"> 
   	 <form>  
-        Email: <input type="text" id="email"required> </p>  
+        Email address: <input type="text" id="email"required> </p><br>  
   
 </form>
-Signature:<br><textarea rows="4" cols="50" name="comment" form="usrform"></textarea><br>
+Signature:<br><textarea rows="4" cols="50" name="comment" form="usrform"></textarea><p>
 Name:<br><textarea rows="4" cols="50" name="comment" form="usrform">
-[insert complete name of person signing the application]	...</textarea><br>
-In the capacity of <br><textarea rows="2" cols="50" name="comment" form="usrform">...</textarea><br>Duly authorised to sign the application for and on behalf of: <br><textarea rows="2" cols="50" name="comment" form="usrform">...</textarea>
+</textarea><p>
+In the capacity of <br><textarea rows="2" cols="50" name="comment" form="usrform">...</textarea><p>Duly authorised to sign the application for and on behalf of: <p><textarea rows="2" cols="50" name="comment" form="usrform">...</textarea>
  
   <p>
     <form>  
@@ -125,7 +126,9 @@ In the capacity of <br><textarea rows="2" cols="50" name="comment" form="usrform
     <div class="form-group row">
     <div class="offset-4 col-8">
       <button name="submit" id="submit" class="btn btn-primary">Submit</button>
+      <button name="cancel" id="Cancel" class="btn btn-primary">Cancel</button>
     </div>
+</div>
   </div> 
 </div>
 </body>
