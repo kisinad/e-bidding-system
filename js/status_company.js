@@ -2,12 +2,26 @@ $(document).ready(function()
 {
 	
 $('#submit').click(function()
+
+
+//$('#newTender').evt.preventDefault();
+
+$('#reset').click(function clear(){
+    $('#referencenumber').val()='';
+    $('#companyName').val()='';
+    $('#description').val()='';
+});
+
+$('#save').click(function()
 {
-    const referenceNumber = $('#referenceNumber').val();
+    var referenceNumber = $('#referenceNumber').val();
     localStorage.setItem("ReferenceNumber", referenceNumber);
     const companyName = $('#companyName').val();
     localStorage.setItem("CompanyName",companyName);s
     const description = $('#description').val();
+    var companyName = $('#companyName').val();
+    localStorage.setItem("CompanyName",companyName);
+    var description = $('#description').val();
     localStorage.setItem("Description", description);
     
     // {
