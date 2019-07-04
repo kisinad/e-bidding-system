@@ -17,3 +17,11 @@ footer{
     text-decoration: none;
     text-align: center
 }
+.page-footer{
+  color: white;
+  text-align: center;
+   position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
