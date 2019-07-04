@@ -1,8 +1,10 @@
 body {
   background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("../images/helloquence-5fNmWej4tAA-unsplash.jpg");
-  height: 100vh;
+  min-height: 100vh;
   background-size: cover;
   background-position: center;
+  display: flex;
+  flex-direction: column;
 }
 .login-page{
 
@@ -12,25 +14,6 @@ body {
 	margin: auto;
 
 }
-/*.form{
-	position: relative;
-	z-index: 1;
-	max-width: 360px;
-	margin: 0 auto 100px;
-	padding: 45px;
-	text-align: center;
-}*/
-/*form input {
-	font-family: "Roboto", sans-serif;
-	outline: 1;
-	background: #f2f2f2;
-	width: 100%;
-	border: 0;
-	margin:0 0 15px;
-	padding: 15px;
-	box-sizing: border
-
-}*/
 .form .message{
 	margin: 15px 0 0;
 	color: aliceblue;
@@ -45,67 +28,79 @@ body {
 #header{
 	width: 100%;
     height: 67px;
+    text-align: right;
 }
 h2{
-text-align: center;
-font-size: 14px;
-color: white;
-font-weight: bold;
+	text-align: center;
+	font-size: 14px;
+	color: white;
+	font-weight: bold;
 }
-/*hr{
-margin-bottom: 30px;
-}*/
-
 div.form{
 	width: 508px;
-    /*min-height: 309px;*/
     margin: 0 auto;
-    /*background: url("../images/rectangle.png");*/
     padding-top: 35px;
     text-align: center;
-width: 320px;
-margin-top: 80px;
-/*float:left;*/
-padding: 10px 55px 40px;
-background-color: rgba(19, 31, 19, 0.72);
-border: 1px solid white;
-box-shadow: 0 0 10px;
-border-radius: 2px;
-font-size: 13px;
+	width: 320px;
+	margin-top: 80px;
+	padding: 10px 55px 40px;
+	background-color: rgba(19, 31, 19, 0.72);
+	border: 1px solid white;
+	box-shadow: 0 0 10px;
+	border-radius: 2px;
+	font-size: 13px;
 }
 input[type=text],[type=password] {
-width: 65.7%;
-height: 34px;
-padding-left: 5px;
-margin-bottom: 20px;
-margin-top: 8px;
-box-shadow: 0 0 5px #6e7575;
-border: 0px solid #a1a9a9;
-color: #4f4f4f;
-font-size: 16px;
-text-align: center;
+	width: 65.7%;
+	height: 34px;
+	padding-left: 5px;
+	margin-bottom: 20px;
+	margin-top: 8px;
+	box-shadow: 0 0 5px #6e7575;
+	border: 0px solid #a1a9a9;
+	color: #4f4f4f;
+	font-size: 16px;
+	text-align: center;
 }
 label{
-color: #464646;
-text-shadow: 0 1px 0 #fff;
-font-size: 14px;
-font-weight: bold;
+	color: #464646;
+	text-shadow: 0 1px 0 #fff;
+	font-size: 14px;
+	font-weight: bold;
 }
+#adminBtn{
+	width: 10%;
+	background: #6699CC;
+	border: 1px solid #0F799E;
+	font-size: 12px;
+	margin-top: 15px;
+	padding: 8px;
+	font-weight: bold;
+	cursor: pointer;
+	color: white;
+	border-radius: 25px;
+	text-shadow: 0px 1px 0px #13506D;	
+}
+#adminBtn:hover{
+	background: linear-gradient(#36caf0 5%, #22abe9 100%);
+	color: black;
+}
+
 #login {
-width: 40%;
-background: #6699CC;
-border: 1px solid #0F799E;
-font-size: 20px;
-margin-top: 15px;
-padding: 8px;
-font-weight: bold;
-cursor: pointer;
-color: white;
-text-shadow: 0px 1px 0px #13506D;
+	width: 40%;
+	background: #6699CC;
+	border: 1px solid #0F799E;
+	font-size: 20px;
+	margin-top: 15px;
+	padding: 8px;
+	font-weight: bold;
+	cursor: pointer;
+	color: white;
+	text-shadow: 0px 1px 0px #13506D;
 }
 #login:hover {
-background: linear-gradient(#36caf0 5%, #22abe9 100%);
-color: black;
+	background: linear-gradient(#36caf0 5%, #22abe9 100%);
+	color: black;
 }
 #create:hover{
 	background: linear-gradient(#36caf0 5%, #22abe9 100%);
@@ -118,28 +113,33 @@ a:first-child {
     padding-left: 15px;
     /* display: block; */
 }
-/*.login-form{
-	margin: 0px;
-    padding: 0px;
-    display: inline;
-}*/
 .register-form{
 	margin: 0px;
     padding: 0px;
     display: inline;
 }
-
+.admin-form{
+	margin: 0px;
+    padding: 0px;
+    display: inline;
 }
-footer{
-	color: #FFFFFF;
-    font-weight: bold;
-    text-decoration: none;
-    text-align: center
 }
 ::placeholder {
   color: black;
 }
 #create{
+width: 50%;
+background: #6699CC;
+border: 1px solid #0F799E;
+font-size: 20px;
+margin-top: 15px;
+padding: 8px;
+font-weight: bold;
+cursor: pointer;
+color: white;
+text-shadow: 0px 1px 0px #13506D;
+}
+#loginAdmin{
 width: 50%;
 background: #6699CC;
 border: 1px solid #0F799E;
@@ -161,7 +161,7 @@ text-shadow: 0px 1px 0px #13506D;
 .logout {
   font-size: .8em;
   font-family: 'Oswald', sans-serif;
-	position: relative;
+  position: relative;
   right: -18px;
   bottom: -4px;
   overflow: hidden;
@@ -196,8 +196,11 @@ a:link:hover {
 .page-footer{
 	color: white;
 	text-align: center;
-	 position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
+	position: fixed;
+  	left: 0;
+  	bottom: 0;
+  	width: 100%;
+}
+#loginadminform{
+	display:none;
 }
