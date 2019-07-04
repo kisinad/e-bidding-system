@@ -1,16 +1,16 @@
 $(document).ready(function()
 {
 	
-$('#submit').click(function()
+$('#submit').click(function clear()
 
 
 //$('#newTender').evt.preventDefault();
 
-$('#reset').click(function clear(){
+$('#reset').click(function()
+{
     $('#referencenumber').val()='';
     $('#companyName').val()='';
     $('#description').val()='';
-});
 
 $('#save').click(function()
 {
@@ -34,8 +34,8 @@ $('#save').click(function()
     // const addenda = $('#Addenda').val();
     // localStorage.setItem("addenda", addenda);
 });
-
-});
+}):
+// });
 // =======
 // $(document).ready(function(){
 // 	$('#newTender').evt.preventDefault();

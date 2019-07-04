@@ -2,7 +2,7 @@ $( document ).ready(function()
 
 {
 
-$('#submit').click(function()
+$('#submit').click(function clear()
 {
 const date= $('#date').val();
 localStorage.setItem("Date", date);
