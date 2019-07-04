@@ -11,3 +11,9 @@ thead {
 .logout{
 	text-align: right;
 }
+footer{
+	    color: #FFFFFF;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center
+}
